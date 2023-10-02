@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<title>MMG</title>
+	<style>
+        body {
+            margin: 0;
+            font-size: 28px;
+            background-color: #333366;
+			color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer {
+            background-color: #181854;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+				#pad{
+					padding: 20px;
+				}
+        #navbar {
+            overflow: hidden;
+            background-color: #181854
+        }
 
+            #navbar a {
+                float: left;
+                display: block;
+                background-color: #53354A;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                #navbar a:hover {
+                    background-color: #903749;
+                    color: white;
+                }
+
+                    #navbar a.active {
+                        background-color: #E84545;
+                        color: white;
+                    }
+
+                #content {
+                    border-block-color: #111;
+                    padding: 50px;
+                    display:block;
+                }
+
+                .sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                }
+
+                .sticky + #content {
+                    padding-top: 60px;
+                }
+
+	</style>
+</head>
+<body>
+	<div id="navbar">
+		<a class="active" href="#">MMG</a>
+		<a href="devs.html">Dev Info</a>
+	</div>
+	<div id="pad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="jumbotron">
+						<h1 class="display-3">Mini Metal Games</h1>
+						<p class="lead">Seja Bem Vindo ao MMG!!!Teremos vários jogos em breve, mas por enquanto fique com uma prévia </p>
+						<hr class="my-4">
+						<p class="lead">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card-deck">
+						<div class="card">
+							<img src="quizfreddie.jpg" class="card-img-top">
+							<div class="card-body">
+								<h2 class="card-title">Freddie Mercury Quiz</h2>
+								<p class="card-text">Um quiz em homenagem ao grande ícone do rock, Freddie Mercury.</p>
+								<a href="quiz.html" class="btn btn-primary">Jogar</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="james.png" class="card-img-top">
+							<div class="card-body">
+								<h2 class="card-title">Numero da sorte</h2>
+								<!-pensei em colocar munero da sorte pq é melhor q adivinha de números e tbm da relacionar com a
+								//quantidade de vezes que a pessoa teve chutar, para ver se aquele é o número da sorte dela->
+								<p class="card-text">Tente acertar um número escolhido aleatóriamente</p>
+								<a href="numero.html" class="btn btn-primary ">Jogar</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="bandas.jpg" class="card-img-top">
+							<div class="card-body">
+								<h2 class="card-title">Adivinhe o cantor.</h2>
+								<p class="card-text">Um jogo onde você escolhe uma carta com um cantor, e nós adivinhamos.</p>
+								<a href="cartas.html" class="btn btn-primary">Jogar</a>
+							</div>
+						</div>
+						<div class="card">
+							<img src="imagem/paisagem02.png" class="card-img-top">
+							<div class="card-body">
+								<h2 class="card-title">Teste tibetano</h2>
+								<!-não tava nessa aula->
+								<p class="card-text">Tbm não sei o que escrever aqui</p>
+								<a href="teste.html" class="btn btn-primary ">Jogar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>   Nos siga para futuras atualizações </p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="site.js"></script>
+
+</body>
+</html>
