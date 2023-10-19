@@ -3,17 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="navbar.css" rel="stylesheet">
 	<title>MMG</title>
 	<style>
-				 body {
+		body {
             margin: 0;
             font-size: 28px;
             background-color: #333366;
 			color: black;
             font-family: Arial, Helvetica, sans-serif;
         }
+		
         footer {
             background-color: #181854;
             color: white;
@@ -22,66 +23,43 @@
             margin-top: 50px;
             font-size: 20px;
         }
-				#pad{
-					padding: 20px;
-				}
-        #navbar {
-            overflow: hidden;
-            background-color: #181854
-        }
-
-            #navbar a {
-                float: left;
-                display: block;
-                background-color: #53354A;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-
-                #navbar a:hover {
-                    background-color: #903749;
-                    color: white;
-                }
-
-                    #navbar a.active {
-                        background-color: #E84545;
-                        color: white;
-                    }
-
-                #content {
-                    border-block-color: #111;
-                    padding: 50px;
-                    display:block;
-                }
-
-                .sticky {
-                    position: fixed;
-                    top: 0;
-                    width: 100%;
-                }
-
-                .sticky + #content {
-                    padding-top: 60px;
-                }
+		
+		.container-fluid{
+					display: flex;
+					justify-content: center;
+		}
+		
+		.jumbotron{
+			background-color: #0D0D3E;
+			color: white;
+		}
+		
+		#pad{
+			padding: 20px;
+		}
+        
 	</style>
 </head>
-<body>
+<body background="IMAGEM">
 	<div id="navbar">
-		<a href="https://sofi000.github.io/">MMG</a>
+		<a href="index.html">MMG</a>
+		<a href="Quiz.html">Quiz</a>
+		<a href="teste.html" class="active">Teste</a>
+		<a href="numero.html">123</a>
+		<a href="index.html">Cartas</a>
+		<a href="#.html">Cartas123</a>
 		<a href="devs.html">Dev Info</a>
 	</div>
 	<div id="pad">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-12" align="center">
 				<div class="jumbotron">
 					<h1 class="display-4">Em Desenvolvimento</h1>
+					<p class="subtitle">Um teste simples de personalidade</p>
 					<hr class="my-4">
 					<p class="lead">
-					<a href="https://sofi000.github.io/" class="btn btn-primary ">Voltar</a>
+					<a href="index.html" class="btn btn-danger ">Voltar</a>
 					</p>
 				</div>
 			</div>					

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="navbar.css" rel="stylesheet">
 	<title>MMG</title>
 	<style>
         body {
@@ -22,63 +23,47 @@
             margin-top: 50px;
             font-size: 20px;
         }
-				#pad{
-					padding: 20px;
-				}
-        #navbar {
-            overflow: hidden;
-            background-color: #181854
-        }
+		#pad{
+			padding: 20px;
+		}
+        
+		button{
+			border-radius: 12px;
+			border-line: 0px;
+			transition-duration: 0.4s;
+		}
 
-            #navbar a {
-                float: left;
-                display: block;
-                background-color: #53354A;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-
-                #navbar a:hover {
-                    background-color: #903749;
-                    color: white;
-                }
-
-                    #navbar a.active {
-                        background-color: #E84545;
-                        color: white;
-                    }
-
-                #content {
-                    border-block-color: #111;
-                    padding: 50px;
-                    display:block;
-                }
-
-                .sticky {
-                    position: fixed;
-                    top: 0;
-                    width: 100%;
-                }
-
-                .sticky + #content {
-                    padding-top: 60px;
-                }
-
+		img:onclick{
+			max-width: 100px;
+		}
+		
+		#button:hover{
+			box-shadow: 3px 3px 4px 3px rgba(0,0,0,0.20);
+		}
+		 
+		.jumbotron{
+			background-color: #0D0D3E;
+			color: white;
+		 }
+		
 	</style>
 </head>
 <body>
 	<div id="navbar">
 		<a class="active" href="#">MMG</a>
+		<a href="Quiz.html">Quiz</a>
+		<a href="teste.html">Teste</a>
+		<a href="numero.html">123</a>
+		<a href="cartas.html">Cartas</a>
+		<a href="#.html">Cartas123</a>
 		<a href="devs.html">Dev Info</a>
+		
 	</div>
 	<div id="pad">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
-					<div class="jumbotron">
+					<div class="jumbotron myclass">
 						<h1 class="display-3">Mini Metal Games</h1>
 						<p class="lead">Seja Bem Vindo ao MMG!!!Teremos vários jogos em breve, mas por enquanto fique com uma prévia </p>
 						<hr class="my-4">
@@ -92,39 +77,35 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="card-deck">
-						<div class="card">
+							<div class="card">
 							<img src="quizfreddie.jpg" class="card-img-top">
 							<div class="card-body">
-								<h2 class="card-title">Freddie Mercury Quiz</h2>
-								<p class="card-text">Um quiz em homenagem ao grande ícone do rock, Freddie Mercury.</p>
-								<a href="quiz.html" class="btn btn-primary">Jogar</a>
+								<h2 class="card-title">freddieQuiz</h2>
+								<a href="Quiz.html" class="btn btn-danger" id="button">Jogar</a>
 							</div>
 						</div>
 						<div class="card">
 							<img src="james.png" class="card-img-top">
 							<div class="card-body">
-								<h2 class="card-title">Numero da sorte</h2>
-								<p class="card-text">Tente acertar um número escolhido aleatóriamente</p>
-								<a href="numero.html" class="btn btn-primary ">Jogar</a>
+								<h2 class="card-title">Adivinha número</h2>
+								<a href="numero.html" class="btn btn-danger" id="button">Jogar</a>
 							</div>
 						</div>
 						<div class="card">
 							<img src="bandas.jpg" class="card-img-top">
 							<div class="card-body">
-								<h2 class="card-title">Adivinhe o cantor.</h2>
-								<p class="card-text">Um jogo onde você escolhe uma carta com um cantor, e nós adivinhamos.</p>
-								<a href="cartas.html" class="btn btn-primary">Jogar</a>
+								<h2 class="card-title">Adivinha cantor</h2>
+								<a href="cartas.html" class="btn btn-danger" id="button">Jogar</a>
 							</div>
 						</div>
 						<div class="card">
 							<img src="testet.jpeg" class="card-img-top">
 							<div class="card-body">
 								<h2 class="card-title">Teste tibetano</h2>
-								<p class="card-text">Um Teste Simples de personalidade</p>
-								<a href="teste.html" class="btn btn-primary ">Jogar</a>
+								<a href="teste.html" class="btn btn-danger" id="button">Jogar</a>
 							</div>
 						</div>
-					</div>
+					</div>	
 				</div>
 			</div>
 		</div>
