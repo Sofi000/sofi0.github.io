@@ -70,11 +70,11 @@
 	</script>
 	<div id="navbar">
 		<a href="index.html">MMG</a>
-		<a href="Quiz.html">Quiz</a>
+		<a href="quiz.html">Quiz</a>
 		<a href="teste.html">Teste</a>
 		<a href="numero.html">123</a>
-		<a class="active" href="#">Cartas</a>
-		<a href="#.html">Cartas123</a>
+		<a href="cartas.html">Cartas</a>
+		<a class="active" href="#">Cartas123</a>
 		<a href="devs.html">Dev Info</a>
 	</div>
 	
@@ -187,37 +187,19 @@
 			if(posicao > 0)
 			
 			{
-				if(posicao==1) document.write('<img src="1.png" />');
-				if(posicao==2) document.write('<img src="2.png" />');
-				if(posicao==3) document.write('<img src="3.png" />');
-				if(posicao==4) document.write('<img src="4.png" />');
-				if(posicao==5) document.write('<img src="5.png" />');
-				if(posicao==6) document.write('<img src="6.png" />');
-				if(posicao==7) document.write('<img src="7.png" />');
-				if(posicao==8) document.write('<img src="8.png" />');
-				if(posicao==9) document.write('<img src="9.png" />');
-				if(posicao==10) document.write('<img src="10.png" />');
-				if(posicao==11) document.write('<img src="11.png" />');
-				if(posicao==12) document.write('<img src="12.png" />');
-				if(posicao==13) document.write('<img src="13.png" />');
-				if(posicao==14) document.write('<img src="14.png" />');
-				if(posicao==15) document.write('<img src="15.png" />');
-				if(posicao==16) document.write('<img src="16.png" />');
-				if(posicao==17) document.write('<img src="17.png" />');
-				if(posicao==18) document.write('<img src="18.png" />');
-				if(posicao==19) document.write('<img src="19.png" />');
-				if(posicao==20) document.write('<img src="20.png" />');
-				if(posicao==21) document.write('<img src="21.png" />');
-				if(posicao==22) document.write('<img src="22.png" />');
-				if(posicao==23) document.write('<img src="23.png" />');
-				if(posicao==24) document.write('<img src="24.png" />');
-				if(posicao==25) document.write('<img src="25.png" />');
-				if(posicao==26) document.write('<img src="26.png" />');
-				if(posicao==27) document.write('<img src="27.png" />');
-				if(posicao==28) document.write('<img src="28.png" />');
-				if(posicao==28) document.write('<img src="29.png" />');
-				if(posicao==30) document.write('<img src="30.png" />');
-				if(posicao==31) document.write('<img src="31.png" />');
+			document.write('<style="navbar.css">');
+			document.write('<>');
+			document.write('<div class="container-fluid" id="titulo">');
+			document.write('<div class="row">');
+			document.write('<div class="col-12" align="center">'); 
+			document.write('<div class="jumbotron myclass">');
+			document.write('<h1 class="display-4">o número que você pensou foi ~ '+ posicao +' </h1>');
+			document.write('<hr class="my-4">');
+			document.write('<a href="cartas123.html" class="btn btn-danger " id="button">Recomeçar</a>');
+			document.write('</div>');
+			document.write('</div>');					
+			document.write('</div>');			
+			document.write('</div>');
 				
 			}else alert('Você não ecolheu nenhuma carta, ou respondeu de forma incorreta!!!');
 			
