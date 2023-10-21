@@ -152,67 +152,67 @@
 					<h3 class="display-5">Responda corretamente ou o resultado será prejudicado</h3>
 					<hr class="my-4">
 					<button class="btn btn-danger btn-block" id="submit">Respostas</button>
+					<script>
+
+						document.addEventListener('DOMContentLoaded', function () {
+							const submitButton = document.getElementById('submit');
+				
+						});
+						submitButton.addEventListener('click', function () {
+							respostas();
+						});
+							
+						function respostas(){
+				
+							alert('aaaaaaaaahhhhhhh');
+						
+							var resp1=document.op1.value
+							var resp2=document.op2.value
+							var resp3=document.op3.value
+							var resp4=document.op4.value
+							var resp5=document.op5.value
+				
+							alert('resposta 1 '+resp1); alert('resposta 2 '+resp2); alert('resposta 3 '+resp3); alert('resposta 4 '+resp4);
+						
+							if (resp1 == "sim") posicao = posicao+1;
+							if (resp2 == "sim") posicao = posicao+2;
+							if (resp3 == "sim") posicao = posicao+4;
+							if (resp4 == "sim") posicao = posicao+8;
+							if (resp5 == "sim") posicao = posicao+16;
+							
+							if(posicao > 0)
+							
+							{
+								document.write('<body style="background-color: #333366">');
+								document.write('<center><div class="btn btn-danger"><h2>A carta que você pensou por acaso foi </h2></div><br />');
+								if(posicao==1) document.write('<img src="imagens/1.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==2) document.write('<img src="imagens/2.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==3) document.write('<img src="imagens/3.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==4) document.write('<img src="imagens/4.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==5) document.write('<img src="imagens/5.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==6) document.write('<img src="imagens/6.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==7) document.write('<img src="imagens/7.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==8) document.write('<img src="imagens/8.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==9) document.write('<img src="imagens/9.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==10) document.write('<img src="imagens/10.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==11) document.write('<img src="imagens/11.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==12) document.write('<img src="imagens/12.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==13) document.write('<img src="imagens/13.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==14) document.write('<img src="imagens/14.png" style="margin: 10px; margin-color: black;"/>');
+								if(posicao==15) document.write('<img src="imagens/15.png" style="margin: 10px; margin-color: black;"/>');
+								document.write('<br /></br />');
+				
+								document.write('<br /><br /><div class="btn btn-danger" href=""><h3>Tentar Novamente!!!</h3></div>');
+								
+								document.write('</center> </body>');
+								
+							}else alert('Você não ecolheu nenhuma carta, ou respondeu de forma incorreta!!!');
+							
+						}
+						
+						</script>
 					<input class="btn btn-danger" type="reset" name="limpar" value="Redefinir" id="button">
 				</div>	
-				<script>
-
-					document.addEventListener('DOMContentLoaded', function () {
-						const submitButton = document.getElementById('submit');
-			
-					});
-					submitButton.addEventListener('click', function () {
-						respostas();
-					});
-						
-					function respostas(){
-			
-						alert('aaaaaaaaahhhhhhh');
-					
-						var resp1=document.op1.value
-						var resp2=document.formAdivinha.op2.value
-						var resp3=document.formAdivinha.op3.value
-						var resp4=document.formAdivinha.op4.value
-						var resp5=document.formAdivinha.op5.value
-			
-						alert('resposta 1 '+resp1); alert('resposta 2 '+resp2); alert('resposta 3 '+resp3); alert('resposta 4 '+resp4);
-					
-						if (resp1 == "sim") posicao = posicao+1;
-						if (resp2 == "sim") posicao = posicao+2;
-						if (resp3 == "sim") posicao = posicao+4;
-						if (resp4 == "sim") posicao = posicao+8;
-						if (resp5 == "sim") posicao = posicao+16;
-						
-						if(posicao > 0)
-						
-						{
-							document.write('<body style="background-color: #333366">');
-							document.write('<center><div class="btn btn-danger"><h2>A carta que você pensou por acaso foi </h2></div><br />');
-							if(posicao==1) document.write('<img src="imagens/1.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==2) document.write('<img src="imagens/2.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==3) document.write('<img src="imagens/3.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==4) document.write('<img src="imagens/4.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==5) document.write('<img src="imagens/5.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==6) document.write('<img src="imagens/6.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==7) document.write('<img src="imagens/7.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==8) document.write('<img src="imagens/8.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==9) document.write('<img src="imagens/9.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==10) document.write('<img src="imagens/10.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==11) document.write('<img src="imagens/11.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==12) document.write('<img src="imagens/12.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==13) document.write('<img src="imagens/13.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==14) document.write('<img src="imagens/14.png" style="margin: 10px; margin-color: black;"/>');
-							if(posicao==15) document.write('<img src="imagens/15.png" style="margin: 10px; margin-color: black;"/>');
-							document.write('<br /></br />');
-			
-							document.write('<br /><br /><div class="btn btn-danger" href=""><h3>Tentar Novamente!!!</h3></div>');
-							
-							document.write('</center> </body>');
-							
-						}else alert('Você não ecolheu nenhuma carta, ou respondeu de forma incorreta!!!');
-						
-					}
-					
-					</script>
 			</div> 
 			</div>
 		</div>
