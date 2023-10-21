@@ -160,8 +160,10 @@
 		</form>
 		<script>
 
-		const resultado = document.getElementById('resultado');
-		
+		document.addEventListener('DOMContentLoaded', function (){
+			const resultado = document.getElementById('resultado');
+		})	
+
 		resultado.addEventListener('click', function () {
 			respostas();
 		});
