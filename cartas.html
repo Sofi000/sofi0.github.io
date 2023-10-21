@@ -151,23 +151,15 @@
 				<div class="jumbotron" align="center">
 					<h3 class="display-5">Responda corretamente ou o resultado será prejudicado</h3>
 					<hr class="my-4">
-					<input class="btn btn-danger" id="resultado" name="Ver Resultado" onclick="respostas()"/>
-					<input class="btn btn-danger" type="reset" name="limpar" id="button"/>
+					<input class="btn btn-danger" id="resultado" name="Ver Resultado" onclick="respostas()">
+					<input class="btn btn-danger" type="reset" name="limpar" id="button">
 				</div>	
 			</div> 
 			</div>
 		</div>
 		</form>
 		<script>
-
-		document.addEventListener('DOMContentLoaded', function (){
-			const resultado = document.getElementById('resultado');
-		})	
-
-		resultado.addEventListener('click', function () {
-			respostas();
-		});
-
+			
 		function respostas(){
 		
 			var resp1=document.formAdivinha.op1.value
