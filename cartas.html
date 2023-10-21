@@ -108,8 +108,8 @@
 					<div class="card-body"> 
 						<h3>Sua carta aparece aqui???</h3>
 						<hr class="my-4">
-						<input type="radio" name="op1" value="sim">Sim
-						<input type="radio" name="op1" value="não">Não
+						<input type="radio" id="op1" value="sim">Sim
+						<input type="radio" id="op1" value="não">Não
 										
 					</div>
 				</div>
@@ -120,8 +120,8 @@
 					<div class="card-body">
 						<h3>Sua carta aparece aqui???</h3>
 						<hr class="my-4">
-						<input type="radio" name="op2" value="sim">Sim
-						<input type="radio" name="op2" value="não">Não
+						<input type="radio" id="op2" value="sim">Sim
+						<input type="radio" id="op2" value="não">Não
 					</div>
 				</div>
 				<div id="pad">
@@ -131,8 +131,8 @@
 					<div class="card-body">
 						<h3>Sua carta aparece aqui??</h3>
 						<hr class="my-4">
-						<input type="radio" name="op3" value="sim">Sim
-						<input type="radio" name="op3" value="não">Não
+						<input type="radio" id="op3" value="sim">Sim
+						<input type="radio" id="op3" value="não">Não
 					</div>
 				</div>
 				<div id="pad">
@@ -142,8 +142,8 @@
 					<div class="card-body">
 					<h3>Sua carta aparece aqui???</h3>
 					<hr class="my-4">
-					<input type="radio" name="op4" value="sim">Sim
-					<input type="radio" name="op4" value="não">Não
+					<input type="radio" id="op4" value="sim">Sim
+					<input type="radio" id="op4" value="não">Não
 					</div>
 				</div>
 				<div id="pad">
@@ -151,7 +151,7 @@
 				<div class="jumbotron" align="center">
 					<h3 class="display-5">Responda corretamente ou o resultado será prejudicado</h3>
 					<hr class="my-4">
-					
+					<input class="btn btn-danger" type="reset" name="limpar" value="Redefinir" id="button">
 					<script>
 
 						document.addEventListener('DOMContentLoaded', function () {
@@ -166,11 +166,11 @@
 				
 							alert('aaaaaaaaahhhhhhh');
 						
-							var resp1=document.FormAdivinha.op1.value
-							var resp2=document.FormAdivinha.op2.value
-							var resp3=document.FormAdivinha.op3.value
-							var resp4=document.FormAdivinha.op4.value
-							var resp5=document.FormAdivinha.op5.value
+							var resp1=document.getElementById('op1');
+							var resp2=document.getElementById('op1');
+							var resp3=document.getElementById('op1');
+							var resp4=document.getElementById('op1');
+							var resp5=document.getElementById('op1');
 				
 							alert('resposta 1 '+resp1); alert('resposta 2 '+resp2); alert('resposta 3 '+resp3); alert('resposta 4 '+resp4);
 						
@@ -211,7 +211,6 @@
 						}
 						
 						</script>
-					<input class="btn btn-danger" type="reset" name="limpar" value="Redefinir" id="button">
 				</div>	
 			</div> 
 			</div>
