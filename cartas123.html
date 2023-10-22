@@ -143,10 +143,10 @@
 		function respostas(){
 
 			alert('blz, já sei');
+			var posicao=0;
 
 			var resp1 = document.querySelector('input[name="op1"]:checked').value;
 			if (resp1 == 1) posicao = posicao+1;
-			alert('posicao'+'resp1');
 
 			var resp2 = document.querySelector('input[name="op2"]:checked').value;
 			if (resp2 == 1) posicao = posicao+2;
@@ -159,8 +159,6 @@
 
 			var resp5 = document.querySelector('input[name="op5"]:checked').value;
 			if (resp5 == 1) posicao = posicao+16;
-
-			var posicao=0;
 
 			if(posicao > 0)
 			
