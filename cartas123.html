@@ -147,18 +147,18 @@
 				<div class="jumbotron" align="center">
 					<h3 class="display-5">Responda corretamente ou o resultado será prejudicado</h3>
 					<hr class="my-4">
-					<input class="btn btn-danger" name="verifica" value="Ver o Resultado" onclick="respostas()" id="button">
-					<input class="btn btn-danger" type="reset" name="limpar" value="Limpar Respostas" id="button">
+					<input class="btn btn-danger" name="verifica" value="Resultado" onclick="respostas()" id="button">
+					<input class="btn btn-danger" type="reset" name="limpar" value="Limpar" id="button">
 				</div>	 
 			</div>
 		<script>
 		function respostas(){
 		
-			var resp1=document.op1.value
-			var resp2=document.op2.value
-			var resp3=document.op3.value
-			var resp4=document.op4.value
-			var resp5=document.op5.value
+			var resp1=document.div.input.op1.value
+			var resp2=document.div.input.op2.value
+			var resp3=document.div.input.op3.value
+			var resp4=document.div.input.op4.value
+			var resp5=document.div.input.op5.value
 		
 			if (resp1 == "sim") posicao = posicao+1;
 			if (resp2 == "sim") posicao = posicao+2;
@@ -183,7 +183,7 @@
 			document.write('</div>');			
 			document.write('</div>');
 				
-			}else alert('Você não ecolheu nenhuma carta, ou respondeu de forma incorreta!!!');
+			}else alert('Você não escolheu nenhuma carta, ou respondeu de forma incorreta!!!');
 			
 		}
 		
