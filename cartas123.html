@@ -142,7 +142,7 @@
 	<script>
 		function respostas(){
 
-			alert('blz');
+			alert('blz, já sei');
 
 			var resp1 = document.querySelector('input[name="op1"]:checked').value;
 			if (resp1 == 1) posicao = posicao+1;
@@ -162,16 +162,21 @@
 
 			var posicao=0;
 
-			alert('tabaum');
-
-			if(posicao > 0){
-				document.write('<div style="background-color: #4682B4">');
-		document.write('<center><h2>O número que você pensou foi: '+posicao+'</h2><br />');	
-		document.write('<br /><br /><a href=""><h3>Tentar Novamente!!!</h3></a>');
-		
-		document.write('</center> </div>');
-		  
-		  
+			if(posicao > 0)
+			
+			{
+			document.write('<div class="container-fluid" id="titulo">');
+			document.write('<div class="row">');
+			document.write('<div class="col-12" align="center">'); 
+			document.write('<div class="jumbotron myclass">');
+			document.write('<h1 class="display-4">o número que você pensou foi ~ '+ posicao +' </h1>');
+			document.write('<hr class="my-4">');
+			document.write('<a href="cartas123.html" class="btn btn-danger " id="button">Recomeçar</a>');
+			document.write('</div>');
+			document.write('</div>');					
+			document.write('</div>');			
+			document.write('</div>');
+				
 			}else alert('Você não escolheu nenhuma carta, ou respondeu de forma incorreta!!!');
 			
 		};
