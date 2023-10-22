@@ -41,6 +41,7 @@
 					border: 2px;
 					transition-duration: 0.4s;
 					padding-bottom: 15px;
+					padding-block: 20px;
 				}
 				
 				#imagem:hover{
@@ -93,48 +94,35 @@
 			<div class="col-12" align="center" >
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_principal.png" >
-						<div class="card-body">
-							<h3>Identifique seu número nas imagens abaixo!!!</h3>
-						</div>
+					<h3>Identifique seu número nas imagens abaixo!!!</h3>
 				</div>
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_carta1.png" >
-					<div class="card-body"> 
-						<h3>Seu número aparece aqui???</h3>
-						<hr class="my-4">
-						<input type="radio" name="op1" value="sim">Sim
-						<input type="radio" name="op1" value="não">Não
-										
-					</div>
+					<h3>Seu número aparece aqui???</h3>
+					<hr class="my-4">
+					<input type="radio" name="op1" value="sim">Sim
+					<input type="radio" name="op1" value="não">Não			
 				</div>
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_carta2.png">
-					<div class="card-body">
-						<h3>Seu número aparece aqui???</h3>
-						<hr class="my-4">
-						<input type="radio" name="op2" value="sim">Sim
-						<input type="radio" name="op2" value="não">Não
-					</div>
-				</div>
-				<div id="pad">
+					<h3>Seu número aparece aqui???</h3>
+					<hr class="my-4">
+					<input type="radio" name="op2" value="sim">Sim
+					<input type="radio" name="op2" value="não">Não
 				</div>
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_carta3.png">
-					<div class="card-body">
-						<h3>Seu número aparece aqui??</h3>
-						<hr class="my-4">
-						<input type="radio" name="op3" value="sim">Sim
-						<input type="radio" name="op3" value="não">Não
-					</div>
+					<h3>Seu número aparece aqui??</h3>
+					<hr class="my-4">
+					<input type="radio" name="op3" value="sim">Sim
+					<input type="radio" name="op3" value="não">Não
 				</div>
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_carta4.png">
-					<div class="card-body">
 					<h3>Seu número aqui???</h3>
 					<hr class="my-4">
 					<input type="radio" name="op4" value="sim">Sim
 					<input type="radio" name="op4" value="não">Não
-					</div>
 				</div>
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_carta5.png">
@@ -143,16 +131,16 @@
 					<input type="radio" name="op5" value="sim">Sim
 					<input type="radio" name="op5" value="não">Não
 				</div>
-			</div>
 				<div class="jumbotron">
 					<h3 class="display-5">Responda corretamente ou o resultado será prejudicado</h3>
 					<hr class="my-4">
 					<input class="btn btn-danger" type="submit" value="Resultado" id="botao" onclick="respostas()">
 					<input class="btn btn-danger" type="reset"value="Redefinir">
-				</div>	 
-			</div>
-		</form>
-		<script>
+				</div>
+			</div>	 
+		</div>
+	</form>
+	<script>
 		function respostas(){
 
 			alert('blz');
@@ -169,7 +157,6 @@
 			});
 		
 			var posicao=0;
-			alert(resp1+resp2+resp3);
 
 			alert('tabaum');
 		
