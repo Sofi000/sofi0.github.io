@@ -94,10 +94,9 @@
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_principal.png" >
 						<div class="card-body">
-							<h3>Escolha seu número</h3>
+							<h3>Identifique seu número nas imagens abaixo!!!</h3>
 						</div>
 				</div>
-				<form name="formAdivinha" method="get">
 				<div class="card" style="width: 590px;" id="imagem">
 					<img src="imagens/n_carta1.png" >
 					<div class="card-body"> 
@@ -152,15 +151,14 @@
 					<input class="btn btn-danger" type="reset" name="limpar" value="Limpar Respostas" id="button">
 				</div>	 
 			</div>
-		</form>
 		<script>
 		function respostas(){
 		
-			var resp1=document.formAdivinha.op1.value
-			var resp2=document.formAdivinha.op2.value
-			var resp3=document.formAdivinha.op3.value
-			var resp4=document.formAdivinha.op4.value
-			var resp5=document.formAdivinha.op5.value
+			var resp1=document.op1.value
+			var resp2=document.op2.value
+			var resp3=document.op3.value
+			var resp4=document.op4.value
+			var resp5=document.op5.value
 		
 			if (resp1 == "sim") posicao = posicao+1;
 			if (resp2 == "sim") posicao = posicao+2;
