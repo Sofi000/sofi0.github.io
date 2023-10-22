@@ -75,7 +75,7 @@
 		<a class="active" href="#">Cartas123</a>
 		<a href="devs.html">Dev Info</a>
 	</div>
-	
+	<form id="form">
 		<div class="container-fluid" id="titulo">
 			<div class="row">
 				<div class="col-12" align="center"> 
@@ -144,24 +144,28 @@
 					<input type="radio" name="op5" value="não">Não
 				</div>
 			</div>
-				<div class="jumbotron" align="center">
+				<div class="jumbotron">
 					<h3 class="display-5">Responda corretamente ou o resultado será prejudicado</h3>
 					<hr class="my-4">
-					<input class="btn btn-danger" name="verifica" value="Resultado" onclick="respostas()" >
-					<input class="btn btn-danger" type="reset" name="limpar" value="Redefinir" id="button">
+					<input class="btn btn-danger" type="submit" name="verifica" value="Resultado" id="botao">
+					<input class="btn btn-danger" type="reset" name="limpar" value="Redefinir">
 				</div>	 
 			</div>
+		</form>
 		<script>
 		function respostas(){
 
 			alert('blz');
+			var form = document.querySelector('#form');
+			var button = document.querySelector('#botao');
+
+			button.addEventListener('click', function (event){
+				event.preventDefault();
+				cosole.log(form.op1.value);
+			});
 		
-			const resp1=document.op1.value
-			alert(resp1);
-			var resp2=document.div.input.op2.value
-			var resp3=document.div.input.op3.value
-			var resp4=document.div.input.op4.value
-			var resp5=document.div.input.op5.value
+			var posicao=0;
+
 
 			alert('tabaum');
 		
@@ -188,7 +192,7 @@
 				
 			}else alert('Você não escolheu nenhuma carta, ou respondeu de forma incorreta!!!');
 			
-		}
+		};
 		
 		</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
