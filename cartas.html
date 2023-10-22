@@ -152,15 +152,15 @@
 			if (resp2 == 1) posicao = posicao+2;
 
 			var resp3 = document.querySelector('input[name="op3"]:checked').value;
-			if (resp3 == 1) posicao = posicao+4;
+			if (resp3 == 1) posicao = posicao+8;
 
 			var resp4 = document.querySelector('input[name="op4"]:checked').value;
-			if (resp4 == 1) posicao = posicao+8;
+			if (resp4 == 1) posicao = posicao+4;
 
 			if(posicao > 0)
 			{
 
-			document.write('<div style="background-color: #333366">');
+			document.write('<div style="background-color: #333366"><center>');
 			document.write('<h1>Sua carta é essa!!!"</h1>');
 				if(posicao==1) document.write('<img src="imagens/1.png" style="width: 890px;" />');
 				if(posicao==2) document.write('<img src="imagens/2.png" style="width: 890px;" />');
@@ -193,17 +193,8 @@
 				if(posicao==13) document.write('Jon Bon Jovi');
 				if(posicao==14) document.write('Freddie Mercury');
 				if(posicao==15) document.write('Chester Bennington');
-				let final = prompt('a que você pensou foi essa?');
-
-			if(final=="sim"||final=='Sim'){
-				alert('Sabia!!! Até próxima então');
-				window.location.reload
-			}else {
-				alert('Respondeu errado então');
-				window.location.reload
-			}
-	
-			document.write('</div>');
+			document.write('<input type="button" value="reiniciar" onclick="window.location.reload" />');
+			document.write('</center></div>');
 
 			}else alert('Você não escolheu nenhuma carta, ou respondeu de forma incorreta!!!');
 			
