@@ -57,14 +57,92 @@
 				<div class="jumbotron">
 					<h1 class="display-4">Número da sorte</h1>
 					<p class="subtitle">Tente acertar um número escolhido aleatóriamente</p>
-					<p class="subtitle">Esse jogo tem Três níveis</p>
+					<p class="subtitle">Esse jogo contêm Três níveis</p>
 					<hr class="my-4">
 					<p class="lead">
-					<a href="nível_1.html" class="btn btn-danger">FÁCIL</a>
-					<a href="#" class="btn btn-danger">MÉDIO</a>
-					<a href="#" class="btn btn-danger">DIFÍCIL</a>
+					<a href="index.html" class="btn btn-danger">Voltar</a>
 					</p>
 				</div>
+				<div class="container">
+					<h1 class="text-center" style="color: white;">Advinhe o Número</h1>
+					<div class="form-group">
+						<label for="level">Escolha o nível de dificuldade:</label>
+						<select class="form-control" id="level">
+							<option value="10">Fácil (1-10)</option>
+							<option value="20">Médio (1-20)</option>
+							<option value="50">Intermediário (1-50)</option>
+							<option value="100">Difícil (1-100)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="guess">Tente adivinhar o número:</label>
+						<input type="number" class="form-control" id="guess" min="1">
+					</div>
+					<button class="btn btn-danger" id="submit">Enviar Palpite</button>
+					<p id="message" class="text-center"></p>
+					<p id="attempts" class="text-center"></p>
+				</div>
+			
+				<script>
+					document.addEventListener('DOMContentLoaded', function () {
+						let level = 10;
+						let numberToGuess = generateRandomNumber(level);
+						let attempts = 0;
+						const submitButton = document.getElementById('submit');
+						const guessInput = document.getElementById('guess');
+						const message = document.getElementById('message');
+						const attemptsCounter = document.getElementById('attempts');
+			
+						document.getElementById('level').addEventListener('change', function () {
+							level = parseInt(this.value);
+							numberToGuess = generateRandomNumber(level);
+							resetGame();
+						});
+			
+						submitButton.addEventListener('click', function () {
+							checkGuess();
+						});
+			
+						guessInput.addEventListener('keyup', function(event) {
+							if (event.key === 'Enter') {
+								checkGuess();
+							}
+						});
+			
+						function checkGuess() {
+							const userGuess = parseInt(guessInput.value);
+			
+							attempts++;
+			
+							if (userGuess === numberToGuess) {
+								message.innerHTML = `Parabéns! Você acertou em ${attempts} tentativa(s).`;
+								message.className = "text-success";
+								submitButton.disabled = true;
+							} else if (userGuess < numberToGuess) {
+								message.innerHTML = "Tente um número mais alto.";
+								message.className = "text-warning";
+							} else {
+								message.innerHTML = "Tente um número mais baixo.";
+								message.className = "text-warning";
+							}
+			
+							attemptsCounter.innerHTML = `Tentativas: ${attempts}`;
+						}
+			
+						function resetGame() {
+							numberToGuess = generateRandomNumber(level);
+							message.innerHTML = '';
+							attemptsCounter.innerHTML = '';
+							submitButton.disabled = false;
+							guessInput.value = '';
+							attempts = 0;
+						}
+			
+						function generateRandomNumber(max) {
+							return Math.floor(Math.random() * max) + 1;
+						}
+					});
+				</script>
 			</div>					
 		</div>			
 	</div>
