@@ -79,8 +79,8 @@
 						<input type="number" class="form-control" id="guess" min="1">
 					</div>
 					<button class="btn btn-danger" id="submit">Enviar Palpite</button>
-					<p id="message" class="text-center"></p>
-					<p id="attempts" class="text-center"></p>
+					<p id="message" class="text-center" style="color: white;"></p>
+					<p id="attempts" class="text-center" style="color: white;"></p>
 				</div>
 			
 				<script>
@@ -116,14 +116,14 @@
 			
 							if (userGuess === numberToGuess) {
 								message.innerHTML = `Parabéns! Você acertou em ${attempts} tentativa(s).`;
-								message.className = "text-success";
+								message.className = "text-light";
 								submitButton.disabled = true;
 							} else if (userGuess < numberToGuess) {
 								message.innerHTML = "Tente um número mais alto.";
-								message.className = "text-warning";
+								message.className = "text-danger";
 							} else {
 								message.innerHTML = "Tente um número mais baixo.";
-								message.className = "text-warning";
+								message.className = "text-danger";
 							}
 			
 							attemptsCounter.innerHTML = `Tentativas: ${attempts}`;
